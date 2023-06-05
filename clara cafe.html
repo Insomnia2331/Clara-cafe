@@ -146,6 +146,7 @@
 
       h2{
         text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
 
 
@@ -171,12 +172,12 @@
         <div id="container3">
             <ul>
                 
-                <li><a href="https://claragroup.co.nz/" id= "Toast" >Toast</a></li>
-                <li><a href="https://claragroup.co.nz/" id= "Burgers" >Burgers</a></li>
-                <li><a href="https://claragroup.co.nz/" id= "Slides" >Slides</a></li>
-                <li><a href="https://claragroup.co.nz/" id= "Crispy" >Crispy</a></li>
-                <li><a href="https://claragroup.co.nz/" id= "Classics" >Classics</a></li>
-                <li><a href="https://claragroup.co.nz/" id= "Drinks" >Drinks</a></li>
+                <li><a href="javascript:" id= "Toast" >Toast</a></li>
+                <li><a href="javascript:" id= "Burgers" >Burgers</a></li>
+                <li><a href="javascript:" id= "Slides" >Slides</a></li>
+                <li><a href="javascript:" id= "Crispy" >Crispy</a></li>
+                <li><a href="javascript:" id= "Classics" >Classics</a></li>
+                <li><a href="javascript:" id= "Drinks" >Drinks</a></li>
             </ul>
         </div>
 
@@ -186,16 +187,16 @@
             <div class="swiper-wrapper">
             
               <div class="swiper-slide">
-                <img src="./images/clara food photo/food (10).jpg" />
+                <img id= "change1" src="./images/clara food photo/food (10).jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="./images/clara food photo/food (2).jpg" />
+                <img id= "change2" src="./images/clara food photo/food (2).jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="./images/clara food photo/food (3).jpg" />
+                <img id= "change3" src="./images/clara food photo/food (3).jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="./images/clara food photo/food (9).jpg" />
+                <img id= "change4" src="./images/clara food photo/food (9).jpg" />
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -223,6 +224,58 @@
     },
   });
 
+</script>
+<script>
+    const toast = document.querySelector("#Toast")
+    const burgers = document.querySelector("#Burgers")
+    const slides = document.querySelector("#Slides")
+    const crispy = document.querySelector("#Crispy")
+    const Classics = document.querySelector("#Classics")
+    const drink = document.querySelector("#Drinks")
+
+    toast.addEventListener("click", function(){
+      document.getElementById('change1').src="./images/clara food photo/food (2).jpg"
+      document.getElementById('change2').src="./images/clara food photo/food (20).jpg"
+      document.getElementById('change3').src="./images/clara food photo/food (26).jpg"
+      document.getElementById('change4').src="./images/clara food photo/food (13).jpg"
+    })
+
+    burgers.addEventListener("click", function(){
+      document.getElementById('change1').src="./images/clara food photo/food (10).jpg"
+      document.getElementById('change2').src="./images/clara food photo/food (34).jpg"
+      document.getElementById('change3').src="./images/clara food photo/food (3).jpg"
+      document.getElementById('change4').src="./images/clara food photo/food (8).jpg"
+    })
+
+    crispy.addEventListener("click", function(){
+      document.getElementById('change1').src="./images/clara food photo/food (36).jpg"
+      document.getElementById('change2').src="./images/clara food photo/food (37).jpg"
+      document.getElementById('change3').src="./images/clara food photo/food (38).jpg"
+      document.getElementById('change4').src="./images/clara food photo/food (32).jpg"
+    })
+
+    Classics.addEventListener("click", function(){
+      document.getElementById('change1').src="./images/clara food photo/food (39).jpg"
+      document.getElementById('change2').src="./images/clara food photo/food (40).jpg"
+      document.getElementById('change3').src="./images/clara food photo/food (31).jpg"
+      document.getElementById('change4').src="./images/clara food photo/food (30).jpg"
+    })
+
+    drink.addEventListener("click", function(){
+      document.getElementById('change1').src="./images/clara food photo/food (9).jpg"
+      document.getElementById('change2').src="./images/clara food photo/food (35).jpg"
+      document.getElementById('change3').src="./images/clara food photo/food (38).jpg"
+      document.getElementById('change4').src="./images/clara food photo/food (7).jpg"
+    })
+
+    slides.addEventListener("click", function(){
+      document.getElementById('change1').src="./images/clara food photo/food (24).jpg"
+      document.getElementById('change2').src="./images/clara food photo/food (27).jpg"
+      document.getElementById('change3').src="./images/clara food photo/food (30).jpg"
+      document.getElementById('change4').src="./images/clara food photo/food (32).jpg"
+    })
+
+    
 </script>
 </body>
 </html>
