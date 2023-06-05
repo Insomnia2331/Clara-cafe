@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cafe, Branch, Clara cafe, burger, coffee, Auckland, Silverdale">
+    <meta name="description" content="Clara Café Silverdale">
+    <meta name="author" content="Jack Wang"> 
+    <title>Clara Café Silverdale</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="swiper-bundle.min.css"
+    />
+
+</head>
+
+<style type="text/css">
+    #container2 a :hover{
+                transform: scale(1.1);
+                transition: all 0.2s;
+                /*overflow: hidden;*/
+    }
+
+    
+    #container2 a {
+        /*display: flex;*/
+        flex: 1;
+        position: relative;
+        top: 60px;
+        left: 80px;
+        /*justify-content: center;
+        align-items: center;*/
+        
+    }
+
+    #container2 #search-form {
+            display: flex;
+            border: none;
+            margin: 5%;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid goldenrod;
+            border-radius: 5px;
+            padding: 5px;
+            top: 1800px;
+        }
+        
+    #container2 #search-input {
+            flex: 1;
+            border: none;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            outline: none;
+        }
+        
+    #container2  #search-button {
+            border: none;
+            background-color: #2e6c43;
+            color: #fff;
+            padding: 5px 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+    }
+
+    #container2  #search-button:hover {
+        background-color: goldenrod;
+
+    }
+
+    #container2  #search-button:active {
+        background-color: #2e6c43;
+
+    }
+
+    #container3 {
+        margin-top: 0%;
+        padding: 0;
+        text-align: center;
+    }
+
+
+    #container3 a {
+           display: block;
+            text-decoration: none;
+            color: goldenrod;
+               
+    }
+
+    #container3 a:hover {
+        color:white; 
+        transform: scale(1.2);
+        transition: all 0.6s;
+    }
+
+
+    #container3 ul {
+        list-style-type: none;
+        margin: 100px 50px;
+        text-align: center;
+        width: 1000;
+        font-size: 20px;
+    }
+
+    #container3 li {
+        display: inline-flex;
+        width: 1000;
+        padding: 10px 100px;
+        background-color: #2e6c43;
+
+    }
+    
+    
+    .swiper {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -250px;
+        margin-top: 0px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      .container4 img{
+        height: 100%;
+        width: 100%;
+
+      }
+
+      h2{
+        text-align: center;
+      }
+
+
+    
+</style>
+
+
+<body>
+    <div id="container">
+        <div id= "container2">
+            <a href="https://claragroup.co.nz/" id= "page logo" >
+                <img src="images/clara logo.jpg" alt="clara cafe logo" >
+            </a>
+
+            <form id="search-form" action="#" method="get">
+                <input id="search-input" type="text" name="q" placeholder="Exploring your delicous food...">
+                <button id="search-button" type="submit">Let's Go</button>
+            </form>
+            
+            
+        </div>
+
+        <div id="container3">
+            <ul>
+                
+                <li><a href="https://claragroup.co.nz/" id= "Toast" >Toast</a></li>
+                <li><a href="https://claragroup.co.nz/" id= "Burgers" >Burgers</a></li>
+                <li><a href="https://claragroup.co.nz/" id= "Slides" >Slides</a></li>
+                <li><a href="https://claragroup.co.nz/" id= "Crispy" >Crispy</a></li>
+                <li><a href="https://claragroup.co.nz/" id= "Classics" >Classics</a></li>
+                <li><a href="https://claragroup.co.nz/" id= "Drinks" >Drinks</a></li>
+            </ul>
+        </div>
+
+
+        <div class="swiper mySwiper">
+            <h2>Clara Magic Cube</h2>
+            <div class="swiper-wrapper">
+            
+              <div class="swiper-slide">
+                <img src="./images/clara food photo/food (10).jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/clara food photo/food (2).jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/clara food photo/food (3).jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/clara food photo/food (9).jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+
+       
+
+
+<script src="swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cube",
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Cafe, Branch, Clara cafe, burger, coffee, Auckland, Silverdale">
+        <meta name="description" content="Clara Café Silverdale">
+        <meta name="author" content="Jack Wang"> 
+        <title>Clara Café Silverdale</title>
+        <link rel="icon" href="clara.ico" type="image/x-icon" />
+    </head>
+    <style>
+        body {
+            overflow: hidden;
+            padding: 0%;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /*filter: blur(5px);      模糊图片*/
+            z-index: 1;
+            top center/cover;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }to {
+                opacity: 1;
+                transform: scale(1);
+                transform: translate(-50%, -50%);
+            }
+            
+        }
+
+        .claracircle{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: 50%;
+            z-index: 2;
+            /*transform: translate(-50%, -50%);*/
+            opacity: 0; /* 初始透明度为0 */
+            animation-name: fadeIn; /* 使用fadeIn动画效果 */
+            animation-duration: 1s; /* 持续1秒钟 */
+            animation-delay: 0.5s; /* 延迟0.5秒后开始 */
+            animation-fill-mode:forwards; /* 动画结束后保持最终状态 */  
+        }
+
+        .claracircle {
+            transition: transform 0.2s ease-in-out; /* 添加过渡效果 */
+        }
+
+        .claracircle:hover {
+            transform: scale(1.5); /* 放大 10% */
+        }
+
+
+    </style>
+
+    <body> 
+        <img src="store2.jpeg" id="background">
+        <a href="clara cafe.html"   target="_blank" id= "click">
+        <img src="claracircle.png" class="claracircle"></a>
+    </body>
+</html>
